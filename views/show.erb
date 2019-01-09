@@ -1,0 +1,8 @@
+<% if @message %>
+  <p><%= @message %></p>
+<% end %>
+<h1>Member details</h1>
+<p>Name: <%= @name %></p>
+<p><a href="/members/<%= @name %>/edit">Edit</a> | 
+<a href="/members/<%= @name %>/delete">Delete</a></p>
+<p><a href="/members">All Members</a></p>

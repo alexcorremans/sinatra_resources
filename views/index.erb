@@ -1,0 +1,9 @@
+<h1>Members</h1>
+<ul>
+  <% @members.each do |name| %>
+    <li><a href="/members/<%= name %>"><%= name %></a> | 
+      <a href="/members/<%= name %>/edit">Edit</a> | 
+      <a href="/members/<%= name %>/delete">Delete</a></li>
+  <% end %>
+</ul>
+<p><a href="/members/new">New member</a></p>
